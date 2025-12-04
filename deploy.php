@@ -16,7 +16,7 @@ set('git_tty', true);
 
 // Hosts
 
-host('3.238.98.12')
+host('3.238.98.126')
     ->set('remote_user', 'ddaw-ud4-deployer')
     ->set('deploy_path', '/var/www/ddaw-ud4-a4/html');
 
