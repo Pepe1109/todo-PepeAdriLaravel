@@ -27,3 +27,5 @@ run('cd {{release_path}} && build');
 });
 
 after('deploy:failed', 'deploy:unlock');
+
+before('deploy:symlink', 'artisan:migrate');
