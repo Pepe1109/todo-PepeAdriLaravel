@@ -13,7 +13,7 @@ add('shared_dirs', []);
 add('writable_dirs', []);
 
 // Hosts
-host('3.238.119.243')
+host('35.173.48.63')
     ->set('remote_user', 'ddaw-ud4-deployer')
     ->set('deploy_path', '/var/www/ddaw-ud4-a4/html')
     ->set('ssh_multiplexing', false);
