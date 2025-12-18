@@ -26,7 +26,7 @@
     <div class="w-3/4 mx-auto">
         <x-success-message class="my-4" />
         
-        <a href="/">Prueba Video</a>
+        <a href="/">Prueba CLASE</a>
 
         {{-- create todo --}}
         <x-card title="To-Do Application">
