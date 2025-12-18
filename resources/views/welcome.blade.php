@@ -5,39 +5,35 @@
     <meta charset="UTF-8">
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+        content="width=device-width, initial-scale=1.0">
     <meta
         http-equiv="X-UA-Compatible"
-        content="ie=edge"
-    >
+        content="ie=edge">
     <title>Todo Application</title>
     <link
         rel="stylesheet"
-        href="{{ mix('css/app.css') }}"
-    >
+        href="{{ mix('css/app.css') }}">
     <script
         src="{{ mix('js/app.js') }}"
-        defer
-    ></script>
+        defer></script>
 </head>
 
 <body class="bg-gray-100">
     <div class="w-3/4 mx-auto">
         <x-success-message class="my-4" />
-        
+
         <a href="/">Prueba CLASE</a>
+        <a href="/">Prueba ADRI</a>
 
         {{-- create todo --}}
         <x-card title="To-Do Application">
             <form
                 action="{{ $model->exists ? route('todo.update', $model->id) : route('todo.store') }}"
-                method="POST"
-            >
+                method="POST">
                 @csrf
 
                 @if($model->exists)
-                    @method('PUT')
+                @method('PUT')
                 @endif
 
                 <div class="text-gray-700 text-base mb-4">
@@ -53,7 +49,7 @@
 
 
         @include('includes._todo_list', [
-            'todos' => $todos,
+        'todos' => $todos,
         ])
     </div>
 </body>
