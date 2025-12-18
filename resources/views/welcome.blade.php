@@ -23,7 +23,7 @@
         <x-success-message class="my-4" />
 
         <a href="/">Prueba CLASE</a>
-        <a href="/">Prueba a</a>
+        <a href="/">Prueba Adri</a>
 
         {{-- create todo --}}
         <x-card title="To-Do Application">
